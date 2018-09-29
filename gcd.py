@@ -4,12 +4,10 @@ def gcd(a, b):
     assert a >= 0 and b >= 0
     while a and b:
         if a > b:
-            a = a / b
-            break
+            a = a % b
         else:
-            b = b / a
-            break
-    return min(a, b)
+            b = b % a
+    return a + b
 
 print(gcd(10, 0))
 
