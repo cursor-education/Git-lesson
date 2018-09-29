@@ -1,15 +1,13 @@
 # Wrong gcd find 5 mistakes
 
 def gcd(a:int, b:int):
-    assert a >= 0 and b >= 0
+    assert a > 0 and b > 0
     while a and b:
         if a > b:
             a = a % b
-            break 
         else:
             b = b % a
-            break
-    return max(a, b)
+     return a + b
 
 # Examples
 
