@@ -1,7 +1,7 @@
 # Wrong gcd find 5 mistakes
 
 def gcd(a: int, b: int):       #1
-    assert, a > 0 and b > 0     #2
+    assert a > 0 and b > 0     #2
     while a and b:
         if a > b:
             a = a % b          #3
