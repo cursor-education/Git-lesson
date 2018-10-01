@@ -1,6 +1,6 @@
 # Wrong gcd find 5 mistakes
 
-def gcd(a, b):
+def gcd(a:int, b:int):
     assert a >= 0 and b >= 0
     while a and b:
         if a > b:
