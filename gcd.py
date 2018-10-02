@@ -7,7 +7,7 @@ def gcd(a, b):
             a = a % b
         else:
             b = b % a
-    return min(a, b)
+    return max(a, b)
 
 # Examples
 
