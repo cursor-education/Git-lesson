@@ -6,7 +6,7 @@ def gcd(a, b):
         if a > b:
             a = a % b
         else:
-            b = b / a
+            b = b % a
     return min(a, b)
 
 # Examples
