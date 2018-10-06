@@ -1,13 +1,13 @@
-# Wrong gcd find 5 mistakes
+# Wrong gcd find 4 mistakes #5
 
 def gcd(a, b):
-    assert a <= 0 and b >= 0
+    assert a >= 0 and b >= 0 #1
     while a and b:
         if a > b:
-            a = a / b
+            a = a % b #2
         else:
-            b = b / a
-    return min(a, b)
+            b = b % a #3
+    return max(a, b) #4
 
 # Examples
 
