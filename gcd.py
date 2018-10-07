@@ -14,4 +14,4 @@ def gcd(a, b):
 print(gcd(10, 0))
 print(gcd(123, 3))
 print(gcd(1000000, 64))
-print((0, 0))
+print(gcd(0, 0))
